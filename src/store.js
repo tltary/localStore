@@ -28,7 +28,6 @@ function checkObj(group, name) {
             return false;
         }    
     } else {
-        console.log(obj[group][name])
         if (typeof obj[group][name] !== "undefined") {
             return true
         } else {
