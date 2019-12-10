@@ -5,10 +5,9 @@ const storage = localStorage;
 let _debug = true;
 
 const _console = (text, param) => {
-    if (!_debug) {
-        return;
+    if (_debug) {
+        console[param](text);
     }
-    console[param](text);
 }
 
 const isValidText = (str) => {
