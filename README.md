@@ -9,7 +9,7 @@ import * as store from './store.js';
 and init you store
 ```js
 store.initStore() // if you need dev version
-store.initStore(true) // if you need production version
+store.initStore(true) // if you need production version and crypto cipher
 ```
 
 ## Methods
