@@ -1,7 +1,7 @@
 # Simple store in localstorage
 
 ## First
-add store in ./src/store.js
+add store from /src/store.js
 like this
 ```js
 import * as store from './store.js';
