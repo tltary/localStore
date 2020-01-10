@@ -9,8 +9,8 @@ import * as store from './store.js';
 and change you secret key to produiction in ./src/tuple.js
 and init you store
 ```js
-store.initStore() // if you need dev version
-store.initStore(true) // if you need production version and crypto cipher
+store.initStore('debug') // if you need dev version
+store.initStore() // if you need production version and crypto cipher
 ```
 
 ## Methods
