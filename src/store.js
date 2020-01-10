@@ -2,7 +2,7 @@ const CryptoJS = require("crypto-js");
 import { secretKey } from './tuple.js';
 
 const storage = localStorage;
-let _debug = true;
+let _debug = false;
 
 const _console = (text, param) => {
     if (_debug) {
@@ -34,7 +34,7 @@ const decode = (data) => {
 
 export const initStore = (prod) => {
     if (prod) {
-        _debug = false;
+        _debug = true;
     }
     if (storage.length === 0) {
         _debug ? storage.setItem('storage', encode('{}')) : storage.setItem('storage', encode(JSON.parse('{}')));
