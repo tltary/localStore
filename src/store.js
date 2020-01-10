@@ -32,8 +32,8 @@ const decode = (data) => {
     return _debug ? JSON.parse(data) : JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
 
-export const initStore = (prod) => {
-    if (prod) {
+export const initStore = (debug) => {
+    if (debug) {
         _debug = true;
     }
     if (storage.length === 0) {
