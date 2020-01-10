@@ -33,7 +33,7 @@ const decode = (data) => {
 }
 
 export const initStore = (debug) => {
-    if (debug) {
+    if (debug === 'debug') {
         _debug = true;
     }
     if (storage.length === 0) {
